@@ -2,7 +2,7 @@ import Button from '../ui/Button';
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/70 shadow-sm">
+    <header className="fixed top-0 w-full z-50 bg-white shadow-sm">
       <nav className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
         <div className="flex items-center">
           <span className="text-xl font-black text-indigo-600">
@@ -29,7 +29,10 @@ const Navbar = () => {
             Pricing
           </a>
         </div>
-        <Button label="Get Started" />
+        <Button
+          className="bg-indigo-600 px-5 py-2 rounded-full font-medium text-sm hover:scale-95 active:scale-90 transition-transform"
+          label="Get Started"
+        />
       </nav>
     </header>
   );

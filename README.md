@@ -2,7 +2,7 @@
 
 ## 1. Need taposin yung concept ng structure sa folder ng page and components/layout/ui
 
-## 2. Need to know how resonsiveness works in different screens
+## 2. Need to know how responsiveness works in different screens
 
 ## 3. Creating an landing page using reactjs with proper implementation an file structure
 
