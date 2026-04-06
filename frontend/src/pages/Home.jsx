@@ -3,7 +3,7 @@ import Button from '../components/ui/Button';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <main>
         <section className="relative pt-32 pb-20">
@@ -13,7 +13,7 @@ const Home = () => {
               <span className="text-[#4364FF] font-bold mb-4 block">
                 Productivity Redefined
               </span>
-              <h1 className="text-6xl font-bold">
+              <h1 className="text-6xl font-bold mb-8">
                 The kinetic core of your
                 <span className="text-[#4364FF]">workflow.</span>
               </h1>
@@ -59,8 +59,24 @@ const Home = () => {
             <div className="w-200 h-200 bg-[#879aff] rounded-full blur-[120px] translate-x-1/2 translate-y-1/2"></div>
           </div>
         </section>
+        <section className="bg-[#f2eeff] py-32">
+          <div className="max-w-screen-2xl mx-auto">
+            <div className="flex flex-col">
+              <div className="max-w-2xl">
+                <h2 className="text-4xl font-extrabold tracking-tight mb-6">
+                  Designed for the <br />
+                  next generation of work.
+                </h2>
+              </div>
+              <p className="text-lg max-w-md pb-2">
+                We've removed the borders of noise of legacy software to give
+                you a fluid canvas for collaboration
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
-    </div>
+    </>
   );
 };
 export default Home;

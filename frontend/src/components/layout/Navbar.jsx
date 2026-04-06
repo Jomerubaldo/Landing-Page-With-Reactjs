@@ -9,7 +9,7 @@ const Navbar = () => {
             Langding Page
           </span>
         </div>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-8"> 
           <a
             className="text-indigo-600 dark:text-slate-400 font-semibold"
             href="#"
