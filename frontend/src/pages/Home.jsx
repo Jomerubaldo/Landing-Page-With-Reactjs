@@ -59,8 +59,9 @@ const Home = () => {
             <div className="w-200 h-200 bg-[#879aff] rounded-full blur-[120px] translate-x-1/2 translate-y-1/2"></div>
           </div>
         </section>
+
         <section className="bg-[#f2eeff] py-32">
-          <div className="max-w-screen-2xl mx-auto">
+          <div className="max-w-screen-2xl mx-auto px-12">
             <div className="flex flex-col">
               <div className="max-w-2xl">
                 <h2 className="text-4xl font-extrabold tracking-tight mb-6">
@@ -72,6 +73,61 @@ const Home = () => {
                 We've removed the borders of noise of legacy software to give
                 you a fluid canvas for collaboration
               </p>
+            </div>
+            <div className="grid grid-cols-3 gap-8">
+              {/* Card 1 */}
+              <div className="group bg-white p-10 rounded-3xl transition-all duration-300 hover:-translate-y-2 border">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                  <span className="text-3xl">⚡</span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Hyper Speed Engine</h3>
+                <p className="leading-relaxed mb-6">
+                  Zero latency interactions. Every click is isntant, every
+                  transition if fluid. Built on your proprietary sync engine.
+                </p>
+                <a
+                  className="text-[#4364FF] font-bold flex items-center group-hover:gap-2 transition-all"
+                  href="#"
+                >
+                  Learn more <span className=" ml-1">chevron_right</span>
+                </a>
+              </div>
+              {/* Card 2 */}
+              <div className="group bg-white p-10 rounded-3xl transition-all duration-300 hover:-translate-y-2 border">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                  <span className="text-3xl">⿻</span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">
+                  Intelligent Layering
+                </h3>
+                <p className="leading-relaxed mb-6">
+                  Organize work in contextual depth. Tasks live where they
+                  belong, not jus in a list. Drag, drop, and nest infinitely.
+                </p>
+                <a
+                  className="text-[#4364FF] font-bold flex items-center group-hover:gap-2 transition-all"
+                  href="#"
+                >
+                  Learn more <span className="ml-1">chevron_right</span>
+                </a>
+              </div>
+              {/* Card 3 */}
+              <div className="group bg-white p-10 rounded-3xl transition-all duration-300 hover:-translate-y-2 border">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
+                  <span className="text-3xl">🛠️</span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Unified Velocity</h3>
+                <p className="leading-relaxed mb-6">
+                  Collaborate without collisions. Live presence and real-time
+                  cursor tracking ensure your team stays in perfect rhythm.
+                </p>
+                <a
+                  className="text-[#4364FF] font-bold flex items-center group-hover:gap-2 transition-all"
+                  href="#"
+                >
+                  Lean more <span className="ml-1">chevron_right</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
