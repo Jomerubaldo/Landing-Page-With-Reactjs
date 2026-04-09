@@ -9,7 +9,7 @@ const Navbar = () => {
             Langding Page
           </span>
         </div>
-        <div className="flex items-center gap-8"> 
+        <div className="flex items-center gap-8">
           <a
             className="text-indigo-600 dark:text-slate-400 font-semibold"
             href="#"
@@ -30,7 +30,7 @@ const Navbar = () => {
           </a>
         </div>
         <Button
-          className="bg-indigo-600 px-5 py-2 rounded-full font-medium text-sm hover:scale-95 active:scale-90 transition-transform"
+          className="bg-indigo-600 text-white px-5 py-2 rounded-full font-bold text-sm hover:scale-95 active:scale-90 transition-transform"
           label="Get Started"
         />
       </nav>
