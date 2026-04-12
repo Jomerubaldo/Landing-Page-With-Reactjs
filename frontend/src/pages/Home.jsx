@@ -1,6 +1,7 @@
 import Navbar from '../components/layout/Navbar';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
+import FeatureItem from '../components/ui/FeatureItem';
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
                 The kinetic core of your
                 <span className="text-[#4364FF]">workflow.</span>
               </h1>
-              <p className="text-xl mb-10 leading-relaxed">
+              <p className="text-xl text-[#75739E] mb-10 leading-relaxed">
                 Tasker orchestrates your team's chaos into a symphony of
                 execution. Built for modern high-performers who demand speed and
                 depth.
@@ -74,24 +75,106 @@ const Home = () => {
                   next generation of work.
                 </h2>
               </div>
-              <p className="text-lg max-w-md pb-6">
+              <p className="text-lg text-[#75739E] max-w-md pb-6">
                 We've removed the borders of noise of legacy software to give
                 you a fluid canvas for collaboration.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-8">
               <Card
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    className="w-10 h-10 fill-current text-white"
+                  >
+                    <path d="M434.8 54.1C446.7 62.7 451.1 78.3 445.7 91.9L367.3 288L512 288C525.5 288 537.5 296.4 542.1 309.1C546.7 321.8 542.8 336 532.5 344.6L244.5 584.6C233.2 594 217.1 594.5 205.2 585.9C193.3 577.3 188.9 561.7 194.3 548.1L272.7 352L128 352C114.5 352 102.5 343.6 97.9 330.9C93.3 318.2 97.2 304 107.5 295.4L395.5 55.4C406.8 46 422.9 45.5 434.8 54.1z" />
+                  </svg>
+                }
                 headline="Hyper-Speed Engine"
                 body="Zero latency interactions. Every click is instant, every transition is fluid. Built on our proprietary sync engine."
               />
               <Card
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    className="w-10 h-10 fill-current text-white"
+                  >
+                    <path d="M296.5 69.2C311.4 62.3 328.6 62.3 343.5 69.2L562.1 170.2C570.6 174.1 576 182.6 576 192C576 201.4 570.6 209.9 562.1 213.8L343.5 314.8C328.6 321.7 311.4 321.7 296.5 314.8L77.9 213.8C69.4 209.8 64 201.3 64 192C64 182.7 69.4 174.1 77.9 170.2L296.5 69.2zM112.1 282.4L276.4 358.3C304.1 371.1 336 371.1 363.7 358.3L528 282.4L562.1 298.2C570.6 302.1 576 310.6 576 320C576 329.4 570.6 337.9 562.1 341.8L343.5 442.8C328.6 449.7 311.4 449.7 296.5 442.8L77.9 341.8C69.4 337.8 64 329.3 64 320C64 310.7 69.4 302.1 77.9 298.2L112 282.4zM77.9 426.2L112 410.4L276.3 486.3C304 499.1 335.9 499.1 363.6 486.3L527.9 410.4L562 426.2C570.5 430.1 575.9 438.6 575.9 448C575.9 457.4 570.5 465.9 562 469.8L343.4 570.8C328.5 577.7 311.3 577.7 296.4 570.8L77.9 469.8C69.4 465.8 64 457.3 64 448C64 438.7 69.4 430.1 77.9 426.2z" />
+                  </svg>
+                }
                 headline="Intelligent Layering"
                 body="Organize work in contextual depth. Tasks live where they belong, not just in a list. Drag, drop, and nest infinitely."
               />
               <Card
+                icon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    className="w-10 h-10 fill-current text-white"
+                  >
+                    <path d="M320 64C355.3 64 384 92.7 384 128C384 163.3 355.3 192 320 192C284.7 192 256 163.3 256 128C256 92.7 284.7 64 320 64zM416 376C416 401 403.3 423 384 435.9L384 528C384 554.5 362.5 576 336 576L304 576C277.5 576 256 554.5 256 528L256 435.9C236.7 423 224 401 224 376L224 336C224 283 267 240 320 240C373 240 416 283 416 336L416 376zM160 96C190.9 96 216 121.1 216 152C216 182.9 190.9 208 160 208C129.1 208 104 182.9 104 152C104 121.1 129.1 96 160 96zM176 336L176 368C176 400.5 188.1 430.1 208 452.7L208 528C208 529.2 208 530.5 208.1 531.7C199.6 539.3 188.4 544 176 544L144 544C117.5 544 96 522.5 96 496L96 439.4C76.9 428.4 64 407.7 64 384L64 352C64 299 107 256 160 256C172.7 256 184.8 258.5 195.9 262.9C183.3 284.3 176 309.3 176 336zM432 528L432 452.7C451.9 430.2 464 400.5 464 368L464 336C464 309.3 456.7 284.4 444.1 262.9C455.2 258.4 467.3 256 480 256C533 256 576 299 576 352L576 384C576 407.7 563.1 428.4 544 439.4L544 496C544 522.5 522.5 544 496 544L464 544C451.7 544 440.4 539.4 431.9 531.7C431.9 530.5 432 529.2 432 528zM480 96C510.9 96 536 121.1 536 152C536 182.9 510.9 208 480 208C449.1 208 424 182.9 424 152C424 121.1 449.1 96 480 96z" />
+                  </svg>
+                }
                 headline="Unified Velocity"
                 body="Collaborate without collisions. Live presence and real-time cursor tracking ensure your team stays in perfect rhythm."
               />
+            </div>
+          </div>
+        </section>
+
+        <section className="relative pt-32 pb-20">
+          <div className="max-w-screen-2xl mx-auto px-12 grid grid-cols-2 gap-24 items-center">
+            <div>
+              <h2 className="text-6xl font-extrabold tracking-tighter mb-8 leading-tight">
+                One command center
+                <br />
+                for everything.
+              </h2>
+              <p className="text-xl text-[#75739E] leading-relaxed mb-12">
+                Stop tab-switching. Tasker integrates with your existing tech
+                stack - Slack, Github, Figma, and Notion - to provide a single,
+                unified source of truth.
+              </p>
+              <div className="space-y-6">
+                <FeatureItem
+                  icon={
+                    <path d="M64 176C64 149.5 85.5 128 112 128L528 128C554.5 128 576 149.5 576 176L576 257.4C551.6 246.2 524.6 240 496 240C408.3 240 334.3 298.8 311.3 379.2C304.2 377.9 297.2 375 291.2 370.4L83.2 214.4C71.1 205.3 64 191.1 64 176zM304 432C304 460.6 310.2 487.6 321.4 512L128 512C92.7 512 64 483.3 64 448L64 260L262.4 408.8C275 418.2 289.3 424.2 304.1 426.7C304.1 428.5 304 430.2 304 432zM352 432C352 352.5 416.5 288 496 288C575.5 288 640 352.5 640 432C640 511.5 575.5 576 496 576C416.5 576 352 511.5 352 432zM553.4 371.1C546.3 365.9 536.2 367.5 531 374.6L478 447.5L451.2 420.7C445 414.5 434.8 414.5 428.6 420.7C422.4 426.9 422.4 437.1 428.6 443.3L468.6 483.3C471.9 486.6 476.5 488.3 481.2 487.9C485.9 487.5 490.1 485.1 492.9 481.4L556.9 393.4C562.1 386.3 560.5 376.2 553.4 371.1z" />
+                  }
+                  title="Bi-directional Sync"
+                  description="Update a task in Tasker, and it reflects in your Jira board instantly."
+                />
+                <FeatureItem
+                  icon={
+                    <path d="M320 64C324.6 64 329.2 65 333.4 66.9L521.8 146.8C543.8 156.1 560.2 177.8 560.1 204C559.6 303.2 518.8 484.7 346.5 567.2C329.8 575.2 310.4 575.2 293.7 567.2C121.3 484.7 80.6 303.2 80.1 204C80 177.8 96.4 156.1 118.4 146.8L306.7 66.9C310.9 65 315.4 64 320 64zM320 130.8L320 508.9C458 442.1 495.1 294.1 496 205.5L320 130.9L320 130.9z" />
+                  }
+                  title="Enterprise Security"
+                  description="SOC2 Type II compliant with end-to-end encryption for all enterprise data."
+                />
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                alt="work-context"
+                className="rounded-[2.5rem] shadow-2xl h-150 w-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuApUijnM32xokQXBaQWA8DfkquZ0GcoHwgJGfKgQbxz3TPmS4pMWT1HsRefYypYTLWWsAmYrm5iQuAdZUPDt9p4Z9jEU3kUeTPJZNKXtsPjxwXPFZ00aHtqy9viiWCWNf-bjKF_8GmgYuGiTILwMYhbiwyb6vBclGj4MwMIjqlretwze2FsVmgGu29a8tDD63JrfS_8GQxVtmvaVx3GZ580p_Hqql-CmWkN78iqlrbpsDqdbO0r2zYdeQWPo9Az-hKYjhgAVWc00__c"
+              />
+              <div className="absolute top-12 -right-12  bg-[#FFFFFF] p-8 rounded-2xl shadow-2xl max-w-sm block">
+                <p className="text-lg font-medium italic mb-4">
+                  "Tasker didn't just organize our tasks; it changed how we
+                  think about productivity entirely."
+                </p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 rounded-full bg-slate-200"></div>
+                  <div>
+                    <p className="font-bold">Sarah Chen</p>
+                    <p className="text-sm tex-[#595781]">
+                      Design Lead, Apex Studio
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

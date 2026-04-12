@@ -11,19 +11,19 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-8">
           <a
-            className="text-indigo-600 dark:text-slate-400 font-semibold"
+            className="dark:text-slate-400 font-semibold hover:text-indigo-600 transition-colors duration-200"
             href="#"
           >
             Product
           </a>
           <a
-            className="text-indigo-600 dark:text-slate-400 font-semibold hover:text-indigo-500 transition-colors duration-200"
+            className="dark:text-slate-400 font-semibold hover:text-indigo-600 transition-colors duration-200"
             href="#"
           >
             Features
           </a>
           <a
-            className="text-indigo-600 dark:text-slate-400 font-semibold hover:text-indigo-500 transition-colors duration-200"
+            className="dark:text-slate-400 font-semibold   hover:text-indigo-600 transition-colors duration-200"
             href="#"
           >
             Pricing
