@@ -2,6 +2,7 @@ import Navbar from '../components/layout/Navbar';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import FeatureItem from '../components/ui/FeatureItem';
+import CircleDescription from '../components/ui/CircleDescription';
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
             </div>
             {/*this area for breakpoints */}
             <div>
-              <div className="relative bg-[#DCD9FF] rounded-3xl p-4 shadow-2xl scale-100 translate-x-12 rotate-1 ">
+              <div className="relative bg-[#DCD9FF] rounded-3xl p-4 shadow-2xl scale-100 translate-x-10 rotate-1 ">
                 <img
                   className="rounded-2xl w-full h-auto object-cover"
                   alt="Tasker Dashboard Mockup"
@@ -160,7 +161,7 @@ const Home = () => {
                 className="rounded-[2.5rem] shadow-2xl h-150 w-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuApUijnM32xokQXBaQWA8DfkquZ0GcoHwgJGfKgQbxz3TPmS4pMWT1HsRefYypYTLWWsAmYrm5iQuAdZUPDt9p4Z9jEU3kUeTPJZNKXtsPjxwXPFZ00aHtqy9viiWCWNf-bjKF_8GmgYuGiTILwMYhbiwyb6vBclGj4MwMIjqlretwze2FsVmgGu29a8tDD63JrfS_8GQxVtmvaVx3GZ580p_Hqql-CmWkN78iqlrbpsDqdbO0r2zYdeQWPo9Az-hKYjhgAVWc00__c"
               />
-              <div className="absolute top-12 -right-12  bg-[#FFFFFF] p-8 rounded-2xl shadow-2xl max-w-sm block">
+              <div className="absolute top-12 -right-10  bg-[#FFFFFF] p-8 rounded-2xl shadow-2xl max-w-sm block">
                 <p className="text-lg font-medium italic mb-4">
                   "Tasker didn't just organize our tasks; it changed how we
                   think about productivity entirely."
@@ -175,6 +176,33 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#e9e5ff] py-32">
+          <div className="max-w-screen-2xl mx-auto px-12 text-center">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-20">
+              The 3-step evolution
+            </h2>
+            <div className="grid grid-cols-3 gap-16 relative">
+              {/* Connector line */}
+              <div className="bg-[#aba8d7]/30 absolute top-1/3 left-0 w-full h-0.5 block z-0"></div>
+              <CircleDescription
+                number="01"
+                title="Integrate"
+                description="Connect your tools and import your existing workflows in under 5 minutes."
+              />
+              <CircleDescription
+                number="02"
+                title="Accelerate"
+                description="Use our AI-assisted sorting to prioritize high-impact actions automatically."
+              />
+              <CircleDescription
+                number="03"
+                title="Dominate"
+                description="Execute at scale with real-time analytics and team momentum tracking."
+              />
             </div>
           </div>
         </section>
